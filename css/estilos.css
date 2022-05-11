@@ -71,6 +71,12 @@
    
 }
 
+.cursos__contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .cursos__w{
     display: flex;
     flex-direction: column;
@@ -119,7 +125,7 @@
 }
 
 .cursos__button{
-    width: 40%;
+    width: 90%;
     border-radius: 50%;
     padding: 4%;
     background-color: grey;
