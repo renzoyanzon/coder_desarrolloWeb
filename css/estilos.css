@@ -59,6 +59,10 @@
     transform: scale(1.5);
 }
 
+.titulo__transicion{
+    transition: all 2s;
+}
+
 .titulo h2{
     font-size: 4rem;
     font-family: 'Water Brush', cursive;
