@@ -70,6 +70,16 @@
     margin: 3%;
 }
 
+.container__nosotros{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container__nosotros h2{
+    align-self: center;
+}
+
 .cursos{
     display: flex;
     flex-direction: row;
@@ -587,7 +597,6 @@ footer{
         .cursos__texto{
             font-size: 1rem;
             width: 70%;
-            height: 65vh;
         }
     
         .cursos__button{
@@ -706,12 +715,11 @@ footer{
         font-size: 1rem;
         padding: 3%;
         width: 70%;
-        height: 35vh;
     }
 
 
     .cursos__button{
-        width: 40%;
+        width: 80%;
         border-radius: 50%;
         font-size: 0.7rem;
     }
