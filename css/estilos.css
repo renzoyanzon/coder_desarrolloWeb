@@ -390,6 +390,20 @@
             height: 40vh;
         }
 
+/* TUTORIALES */
+
+        .tutoriales h1{
+            font-size: 1rem;
+        }
+
+        .tutoriales iframe{
+            width: 100%;
+        }
+
+
+
+
+
 /* CONTACTOS */
 
         .contactos iframe{
@@ -485,11 +499,17 @@
         font-size: 1rem;
     }
 
+    .tutoriales iframe{
+        width: 70vh;
+    }
+
 /* EQUIPO */
 
     .equipos p{
         font-size: 0.6rem;
     }
+
+
 
 /* CONTACTOS */
 
