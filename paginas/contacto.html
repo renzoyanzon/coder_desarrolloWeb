@@ -12,28 +12,52 @@
     <title>Contacto</title>
 </head>
 <body>
-    <header class="menuHeader">
-        <!-- Utilizamos enlaces con una lista desordenada -->
-        <nav class="header__navegacion">
-            <!-- Lista desordenada -->
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="tutoriales.html">Tutoriales</a></li>
-                <li><a href="equipo.html">Equipo</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../recursos/logo_hv.png" alt="hv">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+          
+                <div class="collapse navbar-collapse" id="navbarColor03">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../index.html">Inicio
+                            <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cursos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tutoriales.html">Tutoriales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="equipo.html">Equipo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-sm-2" type="text" placeholder="Search">
+                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
     
     <main> <!-- Dividimos el main en dos secciones, uno con los contactos del sitio y otro con el formulario -->
         
         <section class="contactos">
-            <div>
+            <div class="contactos__maps">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26783.90586290673!2d-69.21861510696147!3d-32.95132007884434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967dec31f509aa63%3A0x25784463ce0705!2sPotrerillos%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1652044750709!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-
-            <div>
+            <div class="contactos__form">
                 <form class="row g-3">
                     <div class="col-md-4 mb-5">
                         <label for="validationServer01" class="form-label">Nombre</label>
@@ -85,6 +109,10 @@
                         Please provide a valid zip.
                         </div>
                     </div>
+                    <div class="form-group">
+                        <label for="exampleTextarea" class="form-label mt-4">Escribenos un mensaje</label>
+                        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                      </div>
                     <div class="col-12 mb-5">
                         <div class="form-check">
                             <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
@@ -97,7 +125,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <button class="btn btn-primary" type="submit">Submit form</button>
+                        <button class="btn btn-primary" type="submit">Enviar formulario</button>
                     </div>
                 </form>
 
@@ -110,30 +138,27 @@
                     <li>Visitanos: Potrerillos- Mendoza, Argentina</li>
                 </ul>
 
-            </div>
-            
-            
-
+            </div>        
         </section>
         
 
     </main>
 
     <footer>
-        <!-- Se colocan los íconos en el pie de pagina -->
-        <div class="footer__uno"> 
-            <p> Hijos del viento, Watersport</p> 
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col footer__center">
+                    <p> Hijos del viento, Watersport</p> 
+                </div>
+                <div class="col footer__center">
+                    <img  src="../recursos/logo_facebook.png" alt="Facebook">
+                    <img  src="../recursos/logo_instagram.png" alt="Instagram">
+                </div>
+                <div class="col footer__center">
+                    <p>Todos los derechos reservados</p> 
+                </div>
+            </div>
         </div>
-
-        <div class="footer__dos">
-            <img class="footer__logo" src="../recursos/logo_facebook.png" alt="Facebook">
-             <img class="footer__logo" src="../recursos/logo_instragram.png" alt="Instagram">
-        </div>
-      
-        <div class="footer__tres">
-            <p> Todos los derechos reservados</p>
-        </div>
-        
 
     </footer>
 

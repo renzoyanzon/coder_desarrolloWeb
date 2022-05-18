@@ -4,33 +4,6 @@
     font-size: 16px;    
 }
 
-/* HEADER  */
-
-
-.menuHeader nav ul{
-    display: flex;
-    flex-direction: row;
-    background-color: grey;
-    justify-content: center;
-    margin-bottom: 0.5%;
-    height: 100%;
-}
-
-.menuHeader ul li{
-    list-style-type: none;
-    padding: 0.8%;  
-}
-
-.menuHeader nav ul li a{
-    color: white;
-    text-decoration: dotted;
-    text-transform:uppercase;
-    font-size: 1.2rem;
-}
-
-.menuHeader nav ul li a:hover{
-    color: black
-}
 
 /* PAGE INDEX*/
 
@@ -53,6 +26,7 @@
     font-family: 'Water Brush', cursive;
     text-align: center;
     margin: 3%;
+    color: black;
 }
 
 .titulo h1:hover{
@@ -67,17 +41,20 @@
     font-size: 4rem;
     font-family: 'Water Brush', cursive;
     text-align: center;
+    color: black;
     margin: 3%;
 }
 
-.container__nosotros{
+.sobre__nosotros{
     display: flex;
     flex-direction: column;
+    background-color: rgba(128, 128, 128, 0.281);
 
 }
 
-.container__nosotros h2{
+.sobre__nosotros h2{
     align-self: center;
+    margin-bottom: 5%;
 }
 
 .cursos{
@@ -137,70 +114,21 @@
 
 .cursos__texto{
     color: grey;
-    font-size: 1.2rem;
-    padding: 5%;
-    width: 70%;
-}
-
-.cursos__button{
-    width: 90%;
-    border-radius: 50%;
-    padding: 4%;
-    /* background-color: grey; */
-    color: white;
     font-size: 1rem;
-    margin: 10% 5%;
-    background-image: radial-gradient(grey,black);  
-}
-
-.cursos__button:hover{
-    transform: scale(1.2);
+    padding: 1%;
+    width: 70%;
 }
 
 
 /* FOOTER */
-footer{
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    height: 8vh;
-    padding: 1%;
+
+.footer__center{
+    text-align: center;
     margin-top: 2%;
 }
 
-.footer__uno{
-    margin: 1%;
-    width: 40rem;
-}
-
-.footer__uno p{
-    font-size: 1rem;
-    color: grey;
-    font-family: Verdana, Geneva, Tahoma, sans-serif ;
-}
-
-.footer__dos{
-    margin: 1%;
-    align-self: center;
-}
-
-.footer__tres p{
-    font-size: 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif ;
-    color: grey;
-}
-
-.footer__tres{
-    margin: 1%;  
-}
-
-.footer__logo{
-    width: 8%;
-   height: 1%;
-}
-
-
 /* PAGE CURSOS*/
+
 .cursos__main{
     display: flex;
     margin-top: 2%;
@@ -358,185 +286,22 @@ footer{
 
 /* PAGE TUTORIALES */
 
-.grid__tutoriales{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-areas:
-    "gridTitle gridTitle"
-    "grid__uno grid__dos"
-    "grid__tres grid__cuatro"
-    "grid__cinco grid__seis"
-    "grid__siete grid__ocho"
-    ;
-    gap: 1rem;
-}
-
-.gridTitle{
-    grid-area: gridTitle;
-    font-size: 2.5rem;
-    color: grey;
+.tutoriales{
+    margin: 2%;
     text-align: center;
-    margin: 3%;
-}
-
-.grid__uno{
-    display: flex;
-    justify-content: center;
-    grid-area: grid__uno;
-}
-
-.grid__dos{
-    display: flex;
-    justify-content: center;
-    grid-area: grid__dos;
-}
-
-.grid__tres{
-    display: flex;
-    justify-content: center;
-    grid-area: grid__tres;
-}
-
-.grid__cuatro{
-    display: flex;
-    justify-content: center;
-    grid-area: grid__cuatro;
-}
-
-.grid__cinco{
-    display: flex;
-    justify-content: center;
-    grid-area: grid__cinco;
-}
-
-.grid__seis{
-    display: flex;
-    justify-content: center;
-    grid-area: grid__seis;
-}
-
-.grid__siete{
-    display: flex;
-    justify-content: center;
-    grid-area: grid__siete;
-}
-
-.grid__ocho{
-    display: flex;
-    justify-content: center;
-    grid-area: grid__ocho;
 }
 
 
 /* PAGE EQUIPOS */
 
-.equipos__grid{
-    width: 100%;
-}
-
 .equipos{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-areas: 
-    "title1 title1"
-    "img1 img2" 
-    "img3 img4" 
-    "img5 img6"
-    "img7 img8" 
-    ;
-    gap: 1%;
-    margin: 1%;
-    padding: 1%;
-    width: 100%;  
-}
-
-.title1{
-    grid-area: title1;
-    color:black;
-    text-align: center;
-    font-size: 2rem;
-}
-
-.equipos__grid p{
-    color: black;
-    width: 60%;
     margin-top: 2%;
 }
 
-.equipos__grid img{
-    width: 50%;
-}
-
-.equipos__grid img:hover{
-    transform: scale(1.3);
-}
-
-.equipos__grid h2{
-  color: black;
-  width: 100%;
-  font-size: 1.5rem;
-  margin-bottom: 2%;
-  text-align: center;
-}
-
-.equipoTabla{
+.equipos__accesorios{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-area: img1;
+    justify-content: center;
 }
-
-.equipoVela{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-area:img2 ;
-}
-
-.equipoBotabara{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-area: img3;
-}
-
-.equipoMastil{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-area: img4;
-}
-
-.equipoQuilla{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-area: img5;
-}
-
-.equipoPie{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-area: img6; 
-}
-
-.equipoExtensores{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-area: img7;
-    height: 100vh;
-}
-
-.equipoAccesorios{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-area: img8;
-    height: 100vh;
-}
-
 
 /* PAGE CONTACTO */
 
@@ -546,25 +311,14 @@ footer{
     align-items: center;
 }
 
+.contactos__maps{
+    margin-top: 2%;
+   
+}
+
 .contactos__form{
-    display: flex;
-    flex-direction: column;
-}
-
-.contactos__form label {
-    font-size: 1.5rem;
-    margin-bottom: 0;
-}
-
-.contactos__form input {
-    font-size: 1.5rem;
-    margin-top: 2%;
-}
-
-.contactos__form textarea {
-    font-size: 1.5rem;
-    width: 40vw;
-    margin-top: 2%;
+    width: 80%;
+    margin-top: 5%;
 }
 
 .contactos__info{
@@ -583,45 +337,43 @@ footer{
         }
     
         .titulo h1{
-            font-size: 2.2rem;
+            font-size: 3rem;
         }
     
         .titulo h2{
-            font-size: 2rem;
+            font-size: 2.5rem;
+        }
+
+        .sobre__nosotros h2{
+            font-size: 1rem;
+        }
+
+        .sobre__nosotros h3{
+            font-size: 1rem;
+        }
+
+        .sobre__nosotros p{
+            font-size: 0.8rem;
         }
     
+
         .cursos__titulo{
             font-size: 1.2rem;
         }
     
         .cursos__texto{
-            font-size: 1rem;
+            font-size: 0.8rem;
             width: 70%;
         }
     
-        .cursos__button{
-            width: 80%;
-            border-radius: 50%;
-            padding: 4%;
-            font-size: 0.8rem;
-        }
     
 /* FOOTER */
-        footer{
-            height: 12vh;
-        }
-        
-        .footer__uno p{
+
+        .footer__center p{
             font-size: 0.8rem;
+
         }
-        
-        .footer__tres p{
-            font-size: 0.8rem;
-        }
-    
-        .footer__logo{
-            width: 12%;
-        }
+
     
 /* CURSOS */
         .cursos__main{
@@ -630,50 +382,22 @@ footer{
         }
     
         .cursos__main h3{
-            font-size: 1.5rem;
-            margin-top: 4%;
+            font-size: 1.2rem;
+            margin-top: 1%;
         }
     
         .cursos__main p{
             height: 40vh;
         }
-    
- /* TUTORIALES */
-    
-        .grid__tutoriales iframe{
-            width: 90%;
-            height: 90%;
-        }
-
-        .gridTitle{
-            font-size: 1.5rem;
-        }
-
- /* EQUIPO */
-
-        .title1{
-            font-size: 1.5rem;
-        }
-
-        .equipos__grid h2{
-            font-size: 1.2rem;
-        }
 
 /* CONTACTOS */
 
         .contactos iframe{
-            width: 100%;
-            height: 80%;
-            margin: 5%;
+            width: 95%;
+            height: 95%;
+            margin: 2%;
         }
-
-        .contactos__form label {
-            font-size: 1rem;   
-        }
-        
-        .contactos__form input {
-            font-size: 1rem;
-        }
+    
 
     }
     
@@ -682,21 +406,30 @@ footer{
 @media (min-width: 320px) and (max-width: 540px) {
 
 /* INDEX */
-    .menuHeader nav ul li a{
-        font-size: 0.8rem;
-    }
-
+ 
     .titulo{
-        height: 15rem;
+        height: 12rem;
         margin-bottom: 2%;
     }
 
     .titulo h1{
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
 
     .titulo h2{
         font-size: 2rem;
+    }
+
+    .sobre__nosotros h2{
+        font-size: 0.8rem;
+    }
+
+    .sobre__nosotros h3{
+        font-size: 0.8rem;
+    }
+
+    .sobre__nosotros p{
+        font-size: 0.6rem;
     }
 
     .cursos{
@@ -707,40 +440,21 @@ footer{
     }
 
     .cursos__titulo{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .cursos__texto{
-
-        font-size: 1rem;
+        font-size: 0.6rem;
         padding: 3%;
         width: 70%;
     }
 
+    .footer__center p{
+        font-size: 0.6rem;
 
-    .cursos__button{
-        width: 80%;
-        border-radius: 50%;
-        font-size: 0.7rem;
     }
 
-    footer{
-        height: 8vh;
-    }
-    
-    
-    .footer__uno p{
-        font-size: 0.5rem;
-    }
-    
-    .footer__tres p{
-        font-size: 0.5rem;
-    }
 
-    .footer__logo{
-        width: 12%;
-    }
-    
 /* CURSOS */
     .cursos__main{
         flex-direction: column;
@@ -749,15 +463,16 @@ footer{
 
     .cursos__main h3{
         font-size: 1.2rem;
-        margin-top: 5%;
+        margin-top: 2%;
     }
 
     .cursos__main p{
-        height: 55vh;
+        
+        font-size: 0.6rem;
     }
 
     .form label{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .form input{
@@ -766,87 +481,22 @@ footer{
     }
 
 /* TUTORIALES */
-    .grid__tutoriales{
-        grid-template-columns: repeat(1,1fr);
-        grid-template-areas:
-        "gridTitle"
-        "grid__uno" 
-        "grid__dos"
-        "grid__tres" 
-        "grid__cuatro"
-        "grid__cinco" 
-        "grid__seis"
-        "grid__siete"
-        "grid__ocho"
-        ;
-    } 
-
-    .grid__tutoriales iframe{
-        width: 90%;
-    }
-
-    .gridTitle{
-        font-size: 1.2rem;
+    .tutoriales h1{
+        font-size: 1rem;
     }
 
 /* EQUIPO */
 
-    .equipos{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "title1"
-        "img1" 
-        "img2" 
-        "img3" 
-        "img4" 
-        "img5" 
-        "img6"
-        "img7" 
-        "img8" 
-    ;
-    }
-
-    .title1{
-        font-size: 1.5rem;
-    }
-
-    .equipos__grid h2{
-        font-size: 1.2rem;
-    }
-
-    .equipoAccesorios{
-        height: 150vh;
-    
-    }
-
-    .equipoExtensores{
-        height: 100vh;
+    .equipos p{
+        font-size: 0.6rem;
     }
 
 /* CONTACTOS */
 
     .contactos iframe{
         width: 90%;
-        height: 80%;
-        margin: 5%;
-    }
-
-    .contactos__form label {
-        font-size: 1rem;   
-    }
-
-    .contactos__form input {
-        font-size: 1rem;
-    }
-
-    .contactos__form textarea {
-        font-size: 1rem;
-        width: 60vw; 
-    }
-    
-    .contactos__info ul li{
-        font-size: 0.8rem;
+        height: 90%;
+        margin: 2%;
     }
 
 

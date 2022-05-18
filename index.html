@@ -16,23 +16,48 @@
     
 </head>
 <body>
-    <header class="menuHeader">
-        <!-- Utilizamos enlaces con una lista desordenada -->
-        <nav>
-            <!-- Lista desordenada -->
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="paginas/cursos.html">Cursos</a></li>
-                <li><a href="paginas/tutoriales.html">Tutoriales</a></li>
-                <li><a href="paginas/equipo.html">Equipo</a></li>
-                <li><a href="paginas/contacto.html">Contacto</a></li>
-            </ul>    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="recursos/logo_hv.png" alt="hv">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+          
+                <div class="collapse navbar-collapse" id="navbarColor03">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Inicio
+                            <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="paginas/cursos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="paginas/tutoriales.html">Tutoriales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="paginas/equipo.html">Equipo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="paginas/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-sm-2" type="text" placeholder="Search">
+                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
    
     <main>
-        <!-- En nuestro wireframe tenemos 3 secciones diferentes -->
-        <section class="titulo"> <!-- Sección principal, dividida en bloques con los diferentes contenidos según wireframe -->
+
+        <section class="titulo"> 
             
             <h1 class="titulo__transicion"> Hijos del viento</h1>
             <h2> Aprende con nosotros</h2>
@@ -40,11 +65,11 @@
 
         <section class="container-fluid">
             <div class="row">
-                <div class="col container__nosotros">
+                <div class="col sobre__nosotros">
                     <h2> SOBRE NOSOTROS</h2>
                     <h3> Somos los hijos del viento</h3>
-                    <p> Un equipo de instructores que ofrecemos lecciones para principianes y avanzados. Estamos en potrerillos -Mendoza, en este lugar corren vientos para todos los estilos con un amplio dique. Tenemos los equipos disponibles cerca para ayudarte a vos a que te olvides del translado.</p>
-                    <p> Tenemos variedades de equipos para todas las especialidades. Te invitamos a elegir libremente.</p>
+                    <p> Un equipo de instructores que ofrecemos lecciones para principianes y avanzados. Estamos en potrerillos -Mendoza, en este lugar corren vientos para todos los estilos con un amplio dique. Tenemos los equipos disponibles cerca para ayudarte a vos a que te olvides del traslado.</p>
+                    <p> Tenemos variedades de equipos para todas las especialidades. Te invitamos a ver los tutoriales para tener el concepto teorico de Windsurf. Además te ofrecemos los equipos disponibles.</p>
                 </div>
 
                 <div class="col">
@@ -82,7 +107,7 @@
                     <p class="cursos__texto"> Subirte a una tabla de windsurf es sentir el mundo a tus pies. Ofrecemos tres cursos: principiantes, intermedios y avanzados. Contamos con instructores especializados que guiarán la aventura. Contamos además con diferentes clases de equipos según las necesidades de cada uno. </p>
                 </div>
                 <div class="cursos__contenido">
-                    <button class="cursos__button"> Reservar ahora </button>
+                    <button class="btn btn-secondary my-2 my-sm-0"> Reservar ahora </button>
                 </div>
 
             </div>
@@ -93,7 +118,7 @@
                     <p class="cursos__texto"> Si lo que buscas es acción el kitesufr es la opción para vos. Aprenderás a saltar y a realizar piruetas en el aire con el mejor equipo de instructores.  </p>
                 </div class="cursos__contenido">
                 <div>
-                    <button class="cursos__button"> Reservar ahora </button>
+                    <button class="btn btn-secondary my-2 my-sm-0"> Reservar ahora </button>
                 </div>
             </div>
 
@@ -105,7 +130,7 @@
                     </p>
                 </div>
                 <div class="cursos__contenido">
-                    <button class="cursos__button"> Reservar ahora </button>
+                    <button class="btn btn-secondary my-2 my-sm-0"> Reservar ahora </button>
                 </div>
             </div>
         </section>
@@ -114,20 +139,22 @@
     </main>
 
     <footer>
-        <!-- Se colocan los íconos en el pie de pagina -->
-        <div class="footer__uno"> 
-            <p> Hijos del viento, Watersport</p> 
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col footer__center">
+                    <p> Hijos del viento, Watersport</p> 
+                </div>
+                <div class="col footer__center">
+                    <img  src="recursos/logo_facebook.png" alt="Facebook">
+                    <img  src="recursos/logo_instagram.png" alt="Instagram">
+                </div>
+                <div class="col footer__center">
+                    <p>Todos los derechos reservados</p> 
+                </div>
+            </div>
         </div>
 
-        <div class="footer__dos">
-            <img class="footer__logo" src="recursos/logo_facebook.png" alt="Facebook">
-             <img class="footer__logo" src="recursos/logo_instragram.png" alt="Instagram">
-        </div>
-      
-        <div class="footer__tres">
-            <p> Todos los derechos reservados</p>
-        </div>
-        
     
     </footer>
 
