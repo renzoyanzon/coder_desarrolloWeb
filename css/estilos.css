@@ -55,6 +55,15 @@
 .sobre__nosotros h2{
     align-self: center;
     margin-bottom: 5%;
+    font-size: 1.5rem;
+}
+
+.sobre__nosotros h3{
+    font-size: 1rem;
+}
+
+.sobre__nosotros p{
+    font-size: 0.9rem;
 }
 
 .cursos{
@@ -62,8 +71,7 @@
     flex-direction: row;
     background-color: black;
     width: 100%;
-    margin-top: 0.5%;
-   
+    margin-top: 0.5%;   
 }
 
 .cursos__contenido{
@@ -294,14 +302,17 @@
 
 /* PAGE EQUIPOS */
 
-.equipos{
+.grid__equipos{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
     margin-top: 2%;
 }
 
-.equipos__accesorios{
-    display: flex;
-    justify-content: center;
+.grid__equipos img:hover{
+    transform: scale(1.1);
 }
+
 
 /* PAGE CONTACTO */
 
@@ -371,7 +382,6 @@
 
         .footer__center p{
             font-size: 0.8rem;
-
         }
 
     
@@ -396,13 +406,6 @@
             font-size: 1rem;
         }
 
-        .tutoriales iframe{
-            width: 100%;
-        }
-
-
-
-
 
 /* CONTACTOS */
 
@@ -411,7 +414,6 @@
             height: 95%;
             margin: 2%;
         }
-    
 
     }
     
@@ -500,15 +502,14 @@
     }
 
     .tutoriales iframe{
-        width: 70vh;
+        width: 100%;
     }
 
 /* EQUIPO */
 
-    .equipos p{
-        font-size: 0.6rem;
+    .grid__equipos p{
+        font-size: 0.8rem;
     }
-
 
 
 /* CONTACTOS */
