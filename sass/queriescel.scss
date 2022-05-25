@@ -1,0 +1,107 @@
+@media (min-width: 320px) and (max-width: 540px) {
+
+    /* INDEX */
+     
+        .titulo{
+            height: 50vh;
+            margin-bottom: 2%;
+        }
+    
+        .titulo h1{
+            font-size: 2rem;
+        }
+    
+        .titulo h2{
+            font-size: 2rem;
+        }
+    
+        .sobre__nosotros h2{
+            font-size: $titulop-queries;
+        }
+    
+        .sobre__nosotros h3{
+            font-size: $titulop-queries;
+        }
+    
+        .sobre__nosotros p{
+            font-size: $textos_cel;
+        }
+    
+        .cursos{
+            display: flex;
+            flex-direction: column;
+            margin-top: 2%;
+            align-items: center;
+        }
+    
+        .cursos__titulo{
+            font-size: $titulop-queries;
+        }
+    
+        .cursos__texto{
+            font-size: $textos_cel;
+            padding: 3%;
+            width: 70%;
+        }
+    
+        .footer__center p{
+            font-size: 0.6rem;
+    
+        }
+    
+    
+    /* CURSOS */
+        .cursos__main{
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .cursos__main h3{
+            font-size: $titulop-queries;
+            margin-top: 2%;
+        }
+    
+        .cursos__main p{
+            
+            font-size: $textos_cel;
+        }
+    
+        .form label{
+            font-size: $textos_cel;
+        }
+    
+        .form input{
+            width: 90%;
+            font-size: 0.6rem;
+        }
+    
+    /* TUTORIALES */
+        .tutoriales h1{
+            font-size: $titulop-queries;
+        }
+    
+        .tutoriales iframe{
+            width: 100%;
+        }
+    
+    /* EQUIPO */
+    
+        .grid__equipos p{
+            font-size: $textos_cel;
+        }
+
+        .grid__equipos img:hover{
+            transform: none;
+        }
+    
+    
+    /* CONTACTOS */
+    
+        .contactos iframe{
+            width: 90%;
+            height: 90%;
+            margin: 2%;
+        }
+    
+    
+    }

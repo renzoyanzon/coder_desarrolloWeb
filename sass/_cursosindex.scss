@@ -1,0 +1,41 @@
+.cursos{
+    display: flex;
+    flex-direction: row;
+    background-color: $cursos-index;
+    width: 100%;
+    margin-top: 0.5%;
+    
+    &__contenido{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        padding: 1%;
+        justify-content: space-between;
+    }
+
+    &__img{
+        border-radius: 20px;
+        width: 70%;
+    }
+
+    &__titulo{
+        color: grey;
+        font-size: $titulo-principal;
+        margin-bottom: 3%;
+        text-align: center;
+    }
+
+    &__texto{
+        color: grey;
+        font-size: $textos;
+        padding: 1%;
+        width: 70%;
+    }
+}

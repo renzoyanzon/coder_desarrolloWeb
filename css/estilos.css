@@ -1,3 +1,37 @@
+@charset "UTF-8";
+/* Tamaño de titulos */
+/* Colores */
+.cursos {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  width: 100%;
+  margin-top: 0.5%; }
+  .cursos__contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .cursos__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 1%;
+    justify-content: space-between; }
+  .cursos__img {
+    border-radius: 20px;
+    width: 70%; }
+  .cursos__titulo {
+    color: grey;
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+    text-align: center; }
+  .cursos__texto {
+    color: grey;
+    font-size: 0.9rem;
+    padding: 1%;
+    width: 70%; }
+
 * {
   margin: 0;
   padding: 0;
@@ -14,96 +48,37 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 30rem;
+  height: 60vh;
   position: relative; }
-
-.titulo h1 {
-  font-size: 4rem;
-  font-family: 'Water Brush', cursive;
-  text-align: center;
-  margin: 3%;
-  color: black; }
-
-.titulo h1:hover {
-  transform: scale(1.5); }
-
-.titulo__transicion {
-  transition: all 2s; }
-
-.titulo h2 {
-  font-size: 4rem;
-  font-family: 'Water Brush', cursive;
-  text-align: center;
-  color: black;
-  margin: 3%; }
+  .titulo__transicion {
+    transition: all 2s; }
+  .titulo h1 {
+    font-size: 4rem;
+    font-family: 'Water Brush', cursive;
+    text-align: center;
+    margin: 3%;
+    color: black; }
+    .titulo h1:hover {
+      transform: scale(1.5); }
+  .titulo h2 {
+    font-size: 4rem;
+    font-family: 'Water Brush', cursive;
+    text-align: center;
+    color: black;
+    margin: 3%; }
 
 .sobre__nosotros {
   display: flex;
   flex-direction: column;
   background-color: rgba(128, 128, 128, 0.281); }
-
-.sobre__nosotros h2 {
-  align-self: center;
-  margin-bottom: 5%;
-  font-size: 1.5rem; }
-
-.sobre__nosotros h3 {
-  font-size: 1rem; }
-
-.sobre__nosotros p {
-  font-size: 0.9rem; }
-
-.cursos {
-  display: flex;
-  flex-direction: row;
-  background-color: black;
-  width: 100%;
-  margin-top: 0.5%; }
-
-.cursos__contenido {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.cursos__w {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
-  padding: 1%;
-  justify-content: space-between; }
-
-.cursos__k {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
-  padding: 1%;
-  justify-content: space-between; }
-
-.cursos__s {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
-  justify-content: space-between;
-  padding: 1%; }
-
-.cursos__img {
-  border-radius: 20px;
-  width: 70%; }
-
-.cursos__titulo {
-  color: grey;
-  font-size: 1.5rem;
-  margin-bottom: 3%;
-  text-align: center; }
-
-.cursos__texto {
-  color: grey;
-  font-size: 1rem;
-  padding: 1%;
-  width: 70%; }
+  .sobre__nosotros h2 {
+    align-self: center;
+    margin-bottom: 5%;
+    font-size: 1.5rem; }
+  .sobre__nosotros h3 {
+    font-size: 1.2rem; }
+  .sobre__nosotros p {
+    font-size: 0.9rem; }
 
 /* FOOTER */
 .footer__center {
@@ -115,6 +90,20 @@
   display: flex;
   margin-top: 2%;
   width: 100%; }
+  .cursos__main h3 {
+    font-size: 1.5rem;
+    color: black; }
+  .cursos__main p {
+    color: black;
+    width: 70%;
+    height: 100%;
+    margin-bottom: 2%;
+    font-size: 0.9rem; }
+
+.cursos__mainImg {
+  width: 90%;
+  border-radius: 5%;
+  margin: 3%; }
 
 .wind {
   display: flex;
@@ -144,98 +133,63 @@
   gap: 1%;
   margin: 5%;
   width: 90%;
-  background-image: linear-gradient(to right, #8d8d8d, rgba(53, 53, 53, 0.219)); }
-
-.form label {
-  font-size: 1rem; }
-
-.form input {
-  font-size: 1rem;
-  width: 80%; }
-
-.form__enviar {
-  justify-self: center;
-  margin: 2%; }
-
-.label1 {
-  grid-area: label1;
-  margin: 5%; }
-
-.campo1 {
-  grid-area: campo1;
-  margin: 5%; }
-
-.label2 {
-  grid-area: label2;
-  margin: 5%; }
-
-.campo2 {
-  grid-area: campo2;
-  margin: 5%; }
-
-.label3 {
-  grid-area: label3;
-  margin: 5%; }
-
-.campo3 {
-  grid-area: campo3;
-  margin: 5%; }
-
-.label4 {
-  grid-area: label4;
-  margin: 5%; }
-
-.campo4 {
-  grid-area: campo4;
-  margin: 5%; }
-
-.label5 {
-  grid-area: label5;
-  margin: 5%; }
-
-.campo5 {
-  grid-area: campo5;
-  margin: 5%; }
-
-.label6 {
-  grid-area: label6;
-  margin: 5%; }
-
-.campo6 {
-  grid-area: campo6;
-  margin: 5%; }
-
-.label7 {
-  grid-area: label7;
-  margin: 5%; }
-
-.campo7 {
-  grid-area: campo7;
-  margin: 5%; }
-
-.label8 {
-  grid-area: label8;
-  margin: 5%; }
-
-.campo8 {
-  grid-area: campo8;
-  margin: 5%; }
-
-.cursos__main h3 {
-  font-size: 2rem;
-  color: black; }
-
-.cursos__main p {
-  color: black;
-  width: 70%;
-  height: 100%;
-  margin-bottom: 2%;
-  font-size: 1rem; }
-
-.cursos__mainImg {
-  width: 90%;
-  border-radius: 5%;
-  margin: 3%; }
+  background-image: linear-gradient(to left, #8d8d8d, rgba(53, 53, 53, 0.219)); }
+  .form .label1 {
+    grid-area: label1;
+    margin: 5%; }
+  .form .campo1 {
+    grid-area: campo1;
+    margin: 5%; }
+  .form .label2 {
+    grid-area: label2;
+    margin: 5%; }
+  .form .campo2 {
+    grid-area: campo2;
+    margin: 5%; }
+  .form .label3 {
+    grid-area: label3;
+    margin: 5%; }
+  .form .campo3 {
+    grid-area: campo3;
+    margin: 5%; }
+  .form .label4 {
+    grid-area: label4;
+    margin: 5%; }
+  .form .campo4 {
+    grid-area: campo4;
+    margin: 5%; }
+  .form .label5 {
+    grid-area: label5;
+    margin: 5%; }
+  .form .campo5 {
+    grid-area: campo5;
+    margin: 5%; }
+  .form .label6 {
+    grid-area: label6;
+    margin: 5%; }
+  .form .campo6 {
+    grid-area: campo6;
+    margin: 5%; }
+  .form .label7 {
+    grid-area: label7;
+    margin: 5%; }
+  .form .campo7 {
+    grid-area: campo7;
+    margin: 5%; }
+  .form .label8 {
+    grid-area: label8;
+    margin: 5%; }
+  .form .campo8 {
+    grid-area: campo8;
+    margin: 5%; }
+  .form__enviar {
+    justify-self: center;
+    margin: 2%; }
+  .form label {
+    font-size: 1rem; }
+  .form input {
+    font-size: 1rem;
+    width: 80%; }
 
 /* PAGE TUTORIALES */
 .tutoriales {
@@ -248,47 +202,42 @@
   justify-content: center;
   margin-bottom: 2%;
   margin-top: 2%; }
-
-.grid__equipos img:hover {
-  transform: scale(1.1); }
+  .grid__equipos img:hover {
+    transform: scale(1.1); }
 
 /* PAGE CONTACTO */
 .contactos {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .contactos__maps {
+    margin-top: 2%; }
+  .contactos__form {
+    width: 80%;
+    margin-top: 5%; }
+  .contactos__info {
+    align-self: flex-start;
+    margin: 5%; }
 
-.contactos__maps {
-  margin-top: 2%; }
-
-.contactos__form {
-  width: 80%;
-  margin-top: 5%; }
-
-.contactos__info {
-  align-self: flex-start;
-  margin: 5%; }
-
-/* TABLET */
 @media (min-width: 541px) and (max-width: 720px) {
   /* INDEX */
   .titulo {
-    height: 15rem;
+    height: 60vh;
     margin-bottom: 2%; }
-  .titulo h1 {
-    font-size: 3rem; }
-  .titulo h2 {
-    font-size: 2.5rem; }
+    .titulo h1 {
+      font-size: 1.8rem; }
+    .titulo h2 {
+      font-size: 1.8rem; }
   .sobre__nosotros h2 {
     font-size: 1rem; }
   .sobre__nosotros h3 {
     font-size: 1rem; }
   .sobre__nosotros p {
-    font-size: 0.8rem; }
+    font-size: 1rem; }
   .cursos__titulo {
-    font-size: 1.2rem; }
+    font-size: 1rem; }
   .cursos__texto {
-    font-size: 0.8rem;
+    font-size: 1rem;
     width: 70%; }
   /* FOOTER */
   .footer__center p {
@@ -298,7 +247,7 @@
     flex-direction: column;
     align-items: center; }
   .cursos__main h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 1%; }
   .cursos__main p {
     height: 40vh; }
@@ -311,22 +260,21 @@
     height: 95%;
     margin: 2%; } }
 
-/* CELULAR */
 @media (min-width: 320px) and (max-width: 540px) {
   /* INDEX */
   .titulo {
-    height: 12rem;
+    height: 50vh;
     margin-bottom: 2%; }
   .titulo h1 {
-    font-size: 2.5rem; }
+    font-size: 2rem; }
   .titulo h2 {
     font-size: 2rem; }
   .sobre__nosotros h2 {
-    font-size: 0.8rem; }
+    font-size: 1rem; }
   .sobre__nosotros h3 {
-    font-size: 0.8rem; }
+    font-size: 1rem; }
   .sobre__nosotros p {
-    font-size: 0.6rem; }
+    font-size: 0.8rem; }
   .cursos {
     display: flex;
     flex-direction: column;
@@ -335,7 +283,7 @@
   .cursos__titulo {
     font-size: 1rem; }
   .cursos__texto {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     padding: 3%;
     width: 70%; }
   .footer__center p {
@@ -345,10 +293,10 @@
     flex-direction: column;
     align-items: center; }
   .cursos__main h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 2%; }
   .cursos__main p {
-    font-size: 0.6rem; }
+    font-size: 0.8rem; }
   .form label {
     font-size: 0.8rem; }
   .form input {
@@ -362,6 +310,8 @@
   /* EQUIPO */
   .grid__equipos p {
     font-size: 0.8rem; }
+  .grid__equipos img:hover {
+    transform: none; }
   /* CONTACTOS */
   .contactos iframe {
     width: 90%;

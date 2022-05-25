@@ -1,0 +1,78 @@
+
+@media (min-width: 541px) and (max-width: 720px) {
+
+    /* INDEX */
+                .titulo{
+                    height:60vh;
+                    margin-bottom: 2%;
+    
+                    h1{
+                        font-size: 1.8rem;
+                    }
+    
+                    h2{
+                        font-size: 1.8rem;
+                    }
+                }
+        
+                .sobre__nosotros h2{
+                    font-size: $titulop-queries;
+                }
+        
+                .sobre__nosotros h3{
+                    font-size: $titulop-queries;
+                }
+        
+                .sobre__nosotros p{
+                    font-size: $textos_tablet;
+                }
+            
+        
+                .cursos__titulo{
+                    font-size: $titulop-queries;
+                }
+            
+                .cursos__texto{
+                    font-size: $textos_tablet;
+                    width: 70%;
+                }
+            
+            
+        /* FOOTER */
+        
+                .footer__center p{
+                    font-size: 0.8rem;
+                }
+        
+            
+        /* CURSOS */
+                .cursos__main{
+                    flex-direction: column;
+                    align-items: center;
+                }
+            
+                .cursos__main h3{
+                    font-size: $titulop-queries;
+                    margin-top: 1%;
+                }
+            
+                .cursos__main p{
+                    height: 40vh;
+                }
+        
+        /* TUTORIALES */
+        
+                .tutoriales h1{
+                    font-size: $titulop-queries;
+                }
+        
+        
+        /* CONTACTOS */
+        
+                .contactos iframe{
+                    width: 95%;
+                    height: 95%;
+                    margin: 2%;
+                }
+        
+            }

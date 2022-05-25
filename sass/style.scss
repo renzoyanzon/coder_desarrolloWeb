@@ -1,9 +1,12 @@
+@import 'variables';
+@import 'cursosindex';
+
+
 *{
     margin:0;
     padding:0;
     font-size: 16px;    
 }
-
 
 /* PAGE INDEX*/
 
@@ -17,116 +20,54 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size:  cover;
-	height:30rem;
-	position: relative;   
+	height:60vh;
+	position: relative;
+
+    &__transicion{
+        transition: all 2s
+    }
+
+    h1{
+        font-size: 4rem;
+        font-family: 'Water Brush', cursive;
+        text-align: center;
+        margin: 3%;
+        color: black;
+
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+
+    h2{
+        font-size: 4rem;
+        font-family: 'Water Brush', cursive;
+        text-align: center;
+        color: black;
+        margin: 3%;
+    }
 }  
 
-.titulo h1{
-    font-size: 4rem;
-    font-family: 'Water Brush', cursive;
-    text-align: center;
-    margin: 3%;
-    color: black;
-}
-
-.titulo h1:hover{
-    transform: scale(1.5);
-}
-
-.titulo__transicion{
-    transition: all 2s;
-}
-
-.titulo h2{
-    font-size: 4rem;
-    font-family: 'Water Brush', cursive;
-    text-align: center;
-    color: black;
-    margin: 3%;
-}
 
 .sobre__nosotros{
     display: flex;
     flex-direction: column;
     background-color: rgba(128, 128, 128, 0.281);
 
+    h2{
+        align-self: center;
+        margin-bottom: 5%;
+        font-size: $titulo-principal;
+    }
+
+    h3{
+        font-size: $titulo-secundario;
+    }
+
+    p{
+        font-size: $textos;
+    }
 }
-
-.sobre__nosotros h2{
-    align-self: center;
-    margin-bottom: 5%;
-    font-size: 1.5rem;
-}
-
-.sobre__nosotros h3{
-    font-size: 1rem;
-}
-
-.sobre__nosotros p{
-    font-size: 0.9rem;
-}
-
-.cursos{
-    display: flex;
-    flex-direction: row;
-    background-color: black;
-    width: 100%;
-    margin-top: 0.5%;   
-}
-
-.cursos__contenido{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.cursos__w{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    padding: 1%;
-    justify-content: space-between;
-}
-
-.cursos__k{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    padding: 1%;
-    justify-content: space-between;
-}
-
-.cursos__s{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    justify-content: space-between;
-    padding: 1%;
-}
-
-.cursos__img {
-    border-radius: 20px;
-    width: 70%;
-
-}
-
-.cursos__titulo{
-    color: grey;
-    font-size: 1.5rem;
-    margin-bottom: 3%;
-    text-align: center;
-}
-
-.cursos__texto{
-    color: grey;
-    font-size: 1rem;
-    padding: 1%;
-    width: 70%;
-}
-
 
 /* FOOTER */
 
@@ -141,7 +82,27 @@
     display: flex;
     margin-top: 2%;
     width: 100%;
+
+    h3{
+        font-size: $titulo-principal;
+        color: black;
+    }
+
+    p{
+        color: black;
+        width: 70%;
+        height: 100%;
+        margin-bottom: 2%;
+        font-size: $textos;
+    }
 }
+
+.cursos__mainImg{
+    width: 90%;
+    border-radius: 5%;
+    margin: 3%;
+}
+
 
 .wind{
     display: flex;
@@ -183,113 +144,96 @@
     gap: 1%;
     margin: 5%;
     width: 90%;
-    background-image: linear-gradient(to right, rgb(141, 141, 141), rgba(53, 53, 53, 0.219));
+    background-image: $bg-form;
+
+    .label1{
+        grid-area: label1;
+        margin: 5%;
+    }
+    .campo1{
+        grid-area: campo1;
+        margin: 5%;
+    }
+    
+    .label2{
+        grid-area: label2;
+        margin: 5%;
+    }
+    .campo2{
+        grid-area: campo2;
+        margin: 5%;
+    }
+    
+    .label3{
+        grid-area: label3;
+        margin: 5%;
+    }
+    .campo3{
+        grid-area: campo3;
+        margin: 5%;
+    }
+    
+    .label4{
+        grid-area: label4;
+        margin: 5%;
+    }
+    .campo4{
+        grid-area: campo4;
+        margin: 5%;
+    }
+    
+    .label5{
+        grid-area: label5;
+        margin: 5%;
+    }
+    .campo5{
+        grid-area: campo5;
+        margin: 5%;
+    }
+    
+    .label6{
+        grid-area: label6;
+        margin: 5%;
+    }
+    .campo6{
+        grid-area: campo6;
+        margin: 5%;
+    }
+    
+    .label7{
+        grid-area: label7;
+        margin: 5%;
+    }
+    .campo7{
+        grid-area: campo7;
+        margin: 5%;
+    }
+    
+    .label8{
+        grid-area: label8;
+        margin: 5%;
+    }
+    .campo8{
+        grid-area: campo8;
+        margin: 5%;
+    }
+
+    &__enviar{ 
+        justify-self: center;
+        margin: 2%;
+    }
+
+    label{
+        font-size: 1rem;
+    }
+
+    input{
+        font-size: 1rem;
+        width: 80%;
+    }
 }
 
-.form label{
-    font-size: 1rem;
-}
 
-.form input{
-    font-size: 1rem;
-    width: 80%;
-}
-
-.form__enviar{
-    justify-self: center;
-    margin: 2%;
-}
-
-.label1{
-    grid-area: label1;
-    margin: 5%;
-}
-.campo1{
-    grid-area: campo1;
-    margin: 5%;
-}
-
-.label2{
-    grid-area: label2;
-    margin: 5%;
-}
-.campo2{
-    grid-area: campo2;
-    margin: 5%;
-}
-
-.label3{
-    grid-area: label3;
-    margin: 5%;
-}
-.campo3{
-    grid-area: campo3;
-    margin: 5%;
-}
-
-.label4{
-    grid-area: label4;
-    margin: 5%;
-}
-.campo4{
-    grid-area: campo4;
-    margin: 5%;
-}
-
-.label5{
-    grid-area: label5;
-    margin: 5%;
-}
-.campo5{
-    grid-area: campo5;
-    margin: 5%;
-}
-
-.label6{
-    grid-area: label6;
-    margin: 5%;
-}
-.campo6{
-    grid-area: campo6;
-    margin: 5%;
-}
-
-.label7{
-    grid-area: label7;
-    margin: 5%;
-}
-.campo7{
-    grid-area: campo7;
-    margin: 5%;
-}
-
-.label8{
-    grid-area: label8;
-    margin: 5%;
-}
-.campo8{
-    grid-area: campo8;
-    margin: 5%;
-} 
-
-.cursos__main h3{
-    font-size: 2rem;
-    color: black;
-}
-
-.cursos__main p{
-    color: black;
-    width: 70%;
-    height: 100%;
-    margin-bottom: 2%;
-    font-size: 1rem;
-}
-
-.cursos__mainImg{
-    width: 90%;
-    border-radius: 5%;
-    margin: 3%;
-}
 
 
 /* PAGE TUTORIALES */
@@ -307,10 +251,10 @@
     justify-content: center;
     margin-bottom: 2%;
     margin-top: 2%;
-}
 
-.grid__equipos img:hover{
-    transform: scale(1.1);
+    img:hover{
+        transform: scale(1.1);
+    }
 }
 
 
@@ -320,205 +264,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
 
-.contactos__maps{
-    margin-top: 2%;
-   
-}
-
-.contactos__form{
-    width: 80%;
-    margin-top: 5%;
-}
-
-.contactos__info{
-    align-self: flex-start;
-    margin: 5%;
-}
-
-/* TABLET */
-
-@media (min-width: 541px) and (max-width: 720px) {
-
-/* INDEX */
-        .titulo{
-            height:15rem;
-            margin-bottom: 2%;
-        }
-    
-        .titulo h1{
-            font-size: 3rem;
-        }
-    
-        .titulo h2{
-            font-size: 2.5rem;
-        }
-
-        .sobre__nosotros h2{
-            font-size: 1rem;
-        }
-
-        .sobre__nosotros h3{
-            font-size: 1rem;
-        }
-
-        .sobre__nosotros p{
-            font-size: 0.8rem;
-        }
-    
-
-        .cursos__titulo{
-            font-size: 1.2rem;
-        }
-    
-        .cursos__texto{
-            font-size: 0.8rem;
-            width: 70%;
-        }
-    
-    
-/* FOOTER */
-
-        .footer__center p{
-            font-size: 0.8rem;
-        }
-
-    
-/* CURSOS */
-        .cursos__main{
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        .cursos__main h3{
-            font-size: 1.2rem;
-            margin-top: 1%;
-        }
-    
-        .cursos__main p{
-            height: 40vh;
-        }
-
-/* TUTORIALES */
-
-        .tutoriales h1{
-            font-size: 1rem;
-        }
-
-
-/* CONTACTOS */
-
-        .contactos iframe{
-            width: 95%;
-            height: 95%;
-            margin: 2%;
-        }
-
-    }
-    
-
-/* CELULAR */
-@media (min-width: 320px) and (max-width: 540px) {
-
-/* INDEX */
- 
-    .titulo{
-        height: 12rem;
-        margin-bottom: 2%;
-    }
-
-    .titulo h1{
-        font-size: 2.5rem;
-    }
-
-    .titulo h2{
-        font-size: 2rem;
-    }
-
-    .sobre__nosotros h2{
-        font-size: 0.8rem;
-    }
-
-    .sobre__nosotros h3{
-        font-size: 0.8rem;
-    }
-
-    .sobre__nosotros p{
-        font-size: 0.6rem;
-    }
-
-    .cursos{
-        display: flex;
-        flex-direction: column;
-        margin-top: 2%;
-        align-items: center;
-    }
-
-    .cursos__titulo{
-        font-size: 1rem;
-    }
-
-    .cursos__texto{
-        font-size: 0.6rem;
-        padding: 3%;
-        width: 70%;
-    }
-
-    .footer__center p{
-        font-size: 0.6rem;
-
-    }
-
-
-/* CURSOS */
-    .cursos__main{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cursos__main h3{
-        font-size: 1.2rem;
+    &__maps{
         margin-top: 2%;
     }
-
-    .cursos__main p{
-        
-        font-size: 0.6rem;
+    
+    &__form{
+        width: 80%;
+        margin-top: 5%;
     }
-
-    .form label{
-        font-size: 0.8rem;
-    }
-
-    .form input{
-        width: 90%;
-        font-size: 0.6rem;
-    }
-
-/* TUTORIALES */
-    .tutoriales h1{
-        font-size: 1rem;
-    }
-
-    .tutoriales iframe{
-        width: 100%;
-    }
-
-/* EQUIPO */
-
-    .grid__equipos p{
-        font-size: 0.8rem;
-    }
-
-
-/* CONTACTOS */
-
-    .contactos iframe{
-        width: 90%;
-        height: 90%;
-        margin: 2%;
-    }
-
-
+    
+    &__info{
+        align-self: flex-start;
+        margin: 5%;
+    }   
 }
+
+@import 'queriestablet';
+@import 'queriescel';
+             
