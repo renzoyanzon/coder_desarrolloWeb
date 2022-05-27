@@ -1,0 +1,35 @@
+/* LISTA DE IMAGES */
+
+$imagenes: (
+img1: equipo_tabla,
+img2: equipo_vela,
+img3: equipo_botabara,
+img4: equipo_mastil,
+img5: equipo_quilla,
+img6: equipo_extensor,
+img7: equipo_accesorios,
+)
+;
+
+/* EACH */
+
+@each $img, $imagen in $imagenes {
+    .#{$img} {
+        background-image: url('../recursos/equipos/#{$imagen}.jpg');
+        
+        width: 300px;
+        height: 300px;
+
+
+    }
+}
+
+/* MIXIN */
+
+@mixin flex ($flex-direction,$justify-content,$align-items) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items; 
+}
+   

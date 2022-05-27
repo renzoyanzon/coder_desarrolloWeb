@@ -1,6 +1,44 @@
 @charset "UTF-8";
 /* Tamaño de titulos */
 /* Colores */
+/* LISTA DE IMAGES */
+/* EACH */
+.img1 {
+  background-image: url("../recursos/equipos/equipo_tabla.jpg");
+  width: 300px;
+  height: 300px; }
+
+.img2 {
+  background-image: url("../recursos/equipos/equipo_vela.jpg");
+  width: 300px;
+  height: 300px; }
+
+.img3 {
+  background-image: url("../recursos/equipos/equipo_botabara.jpg");
+  width: 300px;
+  height: 300px; }
+
+.img4 {
+  background-image: url("../recursos/equipos/equipo_mastil.jpg");
+  width: 300px;
+  height: 300px; }
+
+.img5 {
+  background-image: url("../recursos/equipos/equipo_quilla.jpg");
+  width: 300px;
+  height: 300px; }
+
+.img6 {
+  background-image: url("../recursos/equipos/equipo_extensor.jpg");
+  width: 300px;
+  height: 300px; }
+
+.img7 {
+  background-image: url("../recursos/equipos/equipo_accesorios.jpg");
+  width: 300px;
+  height: 300px; }
+
+/* MIXIN */
 .cursos {
   display: flex;
   flex-direction: row;
@@ -48,7 +86,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 60vh;
+  height: 90vh;
   position: relative; }
   .titulo__transicion {
     transition: all 2s; }
@@ -70,6 +108,8 @@
 .sobre__nosotros {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   background-color: rgba(128, 128, 128, 0.281); }
   .sobre__nosotros h2 {
     align-self: center;
@@ -88,6 +128,9 @@
 /* PAGE CURSOS*/
 .cursos__main {
   display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  align-items: normal;
   margin-top: 2%;
   width: 100%; }
   .cursos__main h3 {
@@ -108,12 +151,14 @@
 .wind {
   display: flex;
   flex-direction: column;
+  justify-content: normal;
   align-items: center;
   width: 80%; }
 
 .kite {
   display: flex;
   flex-direction: column;
+  justify-content: normal;
   align-items: center;
   width: 80%;
   height: 80%; }
@@ -121,6 +166,7 @@
 .stand {
   display: flex;
   flex-direction: column;
+  justify-content: normal;
   align-items: center;
   width: 80%; }
 
@@ -202,13 +248,12 @@
   justify-content: center;
   margin-bottom: 2%;
   margin-top: 2%; }
-  .grid__equipos img:hover {
-    transform: scale(1.1); }
 
 /* PAGE CONTACTO */
 .contactos {
   display: flex;
   flex-direction: column;
+  justify-content: normal;
   align-items: center; }
   .contactos__maps {
     margin-top: 2%; }

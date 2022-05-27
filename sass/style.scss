@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'scripts';
 @import 'cursosindex';
 
 
@@ -11,16 +12,13 @@
 /* PAGE INDEX*/
 
 .titulo{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(column,space-between,center);
     background-image: url(../recursos/windsurfers-600x400-1.webp);
     background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size:  cover;
-	height:60vh;
+	height:90vh;
 	position: relative;
 
     &__transicion{
@@ -50,8 +48,7 @@
 
 
 .sobre__nosotros{
-    display: flex;
-    flex-direction: column;
+    @include flex(column,flex-start,flex-start);
     background-color: rgba(128, 128, 128, 0.281);
 
     h2{
@@ -79,7 +76,8 @@
 /* PAGE CURSOS*/
 
 .cursos__main{
-    display: flex;
+    @include flex(row,normal,normal);
+    
     margin-top: 2%;
     width: 100%;
 
@@ -105,24 +103,18 @@
 
 
 .wind{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(column,normal,center);
     width: 80%;   
 }
 
 .kite{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(column,normal,center);
     width: 80%;
     height: 80%;
 }
 
 .stand{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(column,normal,center);
     width: 80%;
 }
 
@@ -247,23 +239,18 @@
 /* PAGE EQUIPOS */
 
 .grid__equipos{
+
     display: flex;
     justify-content: center;
     margin-bottom: 2%;
     margin-top: 2%;
-
-    img:hover{
-        transform: scale(1.1);
-    }
 }
 
 
 /* PAGE CONTACTO */
 
 .contactos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(column,normal,center);
 
     &__maps{
         margin-top: 2%;
