@@ -133,7 +133,7 @@
   align-items: normal;
   margin-top: 2%;
   width: 100%; }
-  .cursos__main h3 {
+  .cursos__main h1 {
     font-size: 1.5rem;
     color: black; }
   .cursos__main p {
@@ -291,7 +291,7 @@
   .cursos__main {
     flex-direction: column;
     align-items: center; }
-  .cursos__main h3 {
+  .cursos__main h1 {
     font-size: 1rem;
     margin-top: 1%; }
   .cursos__main p {
@@ -337,7 +337,7 @@
   .cursos__main {
     flex-direction: column;
     align-items: center; }
-  .cursos__main h3 {
+  .cursos__main h1 {
     font-size: 1rem;
     margin-top: 2%; }
   .cursos__main p {
