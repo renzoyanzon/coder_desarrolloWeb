@@ -1,4 +1,4 @@
-.cursos{
+.deportes{
     display: flex;
     flex-direction: row;
     background-color: $cursos-index;
@@ -35,6 +35,7 @@
     &__texto{
         color: grey;
         font-size: $textos;
+        text-align: justify;
         padding: 1%;
         width: 70%;
     }

@@ -26,7 +26,7 @@
     }
 
     h1{
-        font-size: 4rem;
+        font-size: $titulo-principal*3;
         font-family: 'Water Brush', cursive;
         text-align: center;
         margin: 3%;
@@ -38,7 +38,7 @@
     }
 
     h2{
-        font-size: 4rem;
+        font-size: $titulo-principal*3;
         font-family: 'Water Brush', cursive;
         text-align: center;
         color: black;
@@ -63,6 +63,7 @@
 
     p{
         font-size: $textos;
+        text-align: justify;
     }
 }
 
@@ -75,157 +76,58 @@
 
 /* PAGE CURSOS*/
 
-.cursos__main{
-    @include flex(row,normal,normal);
-    
-    margin-top: 2%;
-    width: 100%;
+.cursos{
+    @include flex(column,center,normal);
+    width: 60%;
+    background-color: whitesmoke;
 
-    h1{
-        font-size: $titulo-principal;
-        color: black;
-    }
-
-    p{
-        color: black;
-        width: 70%;
-        height: 100%;
-        margin-bottom: 2%;
-        font-size: $textos;
-    }
-}
-
-.cursos__mainImg{
-    width: 90%;
-    border-radius: 5%;
-    margin: 3%;
-}
-
-
-.wind{
-    @include flex(column,normal,center);
-    width: 80%;   
-}
-
-.kite{
-    @include flex(column,normal,center);
-    width: 80%;
-    height: 80%;
-}
-
-.stand{
-    @include flex(column,normal,center);
-    width: 80%;
-}
-
-.form{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-areas: 
-    "label1 campo1"
-    "label2 campo2"
-    "label3 campo3"
-    "label4 campo4"
-    "label5 campo5"
-    "label6 campo6"
-    "label7 campo7"
-    "label8 campo8"
-    ;
-    border: 3px solid black;
-    border-radius: 5%;
-    gap: 1%;
-    margin: 5%;
-    width: 90%;
-    background-image: $bg-form;
-
-    .label1{
-        grid-area: label1;
-        margin: 5%;
-    }
-    .campo1{
-        grid-area: campo1;
-        margin: 5%;
-    }
-    
-    .label2{
-        grid-area: label2;
-        margin: 5%;
-    }
-    .campo2{
-        grid-area: campo2;
-        margin: 5%;
-    }
-    
-    .label3{
-        grid-area: label3;
-        margin: 5%;
-    }
-    .campo3{
-        grid-area: campo3;
-        margin: 5%;
-    }
-    
-    .label4{
-        grid-area: label4;
-        margin: 5%;
-    }
-    .campo4{
-        grid-area: campo4;
-        margin: 5%;
-    }
-    
-    .label5{
-        grid-area: label5;
-        margin: 5%;
-    }
-    .campo5{
-        grid-area: campo5;
-        margin: 5%;
-    }
-    
-    .label6{
-        grid-area: label6;
-        margin: 5%;
-    }
-    .campo6{
-        grid-area: campo6;
-        margin: 5%;
-    }
-    
-    .label7{
-        grid-area: label7;
-        margin: 5%;
-    }
-    .campo7{
-        grid-area: campo7;
-        margin: 5%;
-    }
-    
-    .label8{
-        grid-area: label8;
-        margin: 5%;
-    }
-    .campo8{
-        grid-area: campo8;
-        margin: 5%;
-    }
-
-    &__enviar{ 
-        justify-self: center;
+    &__boxuno{
+        @include flex(row,center,normal);
         margin: 2%;
+        width: 100%;
+    
+        img{
+            width: 100%;
+        }
+    }
+    &__boxdos{
+        @include flex(column,center,normal);
+        margin: 2%;
+        width: 100%;
+
+        h1{
+            font-size: $titulo-principal;
+        }
+
+        p{
+           text-align: justify; 
+        }
     }
 
-    label{
-        font-size: 1rem;
+    &__boxtres{
+        margin: 2%;
+        width: 100%;
+
+        p{
+            text-align: justify;
+        }
     }
 
-    input{
-        font-size: 1rem;
-        width: 80%;
+    &__form{
+        margin: 2%;
+
+
     }
+
+    &__prices{
+        @include flex(column,center,flex-start );
+    
+        p{
+            font-size: 1.2rem;
+        }
+    }
+
 }
-
-
 
 
 /* PAGE TUTORIALES */
