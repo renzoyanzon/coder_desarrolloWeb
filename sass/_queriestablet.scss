@@ -7,58 +7,75 @@
                     margin-bottom: 2%;
     
                     h1{
-                        font-size: 1.8rem;
+                        font-size: 2rem;
                     }
     
                     h2{
-                        font-size: 1.8rem;
+                        font-size: 2rem;
                     }
                 }
         
                 .sobre__nosotros h2{
-                    font-size: $titulop-queries;
+                    font-size: $titulo-tablet;
                 }
         
                 .sobre__nosotros h3{
-                    font-size: $titulop-queries;
+                    font-size: $textos_tablet;
                 }
         
                 .sobre__nosotros p{
                     font-size: $textos_tablet;
                 }
             
+
+                .deportes{
+                    @include flex(column,center,center);
         
-                .cursos__titulo{
-                    font-size: $titulop-queries;
-                }
-            
-                .cursos__texto{
-                    font-size: $textos_tablet;
-                    width: 70%;
+                    &__img{
+                        width: 100%;
+                    }
+        
+                    &__titulo{
+                        font-size: $titulo-tablet;
+                    }
+                
+                    &__texto{
+                        width: 100%;
+                        font-size: $textos_tablet;  
+                    }
                 }
             
             
         /* FOOTER */
         
-                .footer__center p{
-                    font-size: 0.8rem;
+                .footer__center {
+                    p{font-size: 0.8rem;}
                 }
         
             
         /* CURSOS */
-                .cursos__main{
-                    flex-direction: column;
-                    align-items: center;
+                .cursos{
+                    width: 100%;
+                    &__boxdos{
+                        h1{
+                            font-size: $titulo-tablet;
+                        }
+                
+                        p{
+                           font-size: $textos_tablet; 
+                        }
+                    }
+
+                    &__boxtres{
+                        @include flex(column,center,normal);
+ 
+                    }
+
+                    &__boxcuatro{
+                        @include flex(column,normal,normal);
+                    }
                 }
-            
-                .cursos__main h1{
-                    font-size: $titulop-queries;
-                    margin-top: 1%;
-                }
-            
-                .cursos__main p{
-                    height: 40vh;
-                }
+
         
         /* TUTORIALES */
         

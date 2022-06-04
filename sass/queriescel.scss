@@ -5,43 +5,46 @@
         .titulo{
             height: 50vh;
             margin-bottom: 2%;
+
+            h1{
+                font-size: 2rem;
+            }
+
+            h2{ 
+                font-size: 2rem;
+            }
         }
-    
-        .titulo h1{
-            font-size: 2rem;
+
+        .sobre__nosotros{
+            h2{
+                font-size: $titulop-queries;
+            }
+
+            h3{
+                font-size: $titulop-queries;
+            }
+
+            p{
+                font-size: $textos_cel;
+            }
         }
-    
-        .titulo h2{
-            font-size: 2rem;
-        }
-    
-        .sobre__nosotros h2{
-            font-size: $titulop-queries;
-        }
-    
-        .sobre__nosotros h3{
-            font-size: $titulop-queries;
-        }
-    
-        .sobre__nosotros p{
-            font-size: $textos_cel;
-        }
-    
-        .cursos{
-            display: flex;
-            flex-direction: column;
-            margin-top: 2%;
-            align-items: center;
-        }
-    
-        .cursos__titulo{
-            font-size: $titulop-queries;
-        }
-    
-        .cursos__texto{
-            font-size: $textos_cel;
-            padding: 3%;
-            width: 70%;
+
+
+        .deportes{
+            @include flex(column,center,center);
+
+            &__img{
+                width: 100%;
+            }
+
+            &__titulo{
+                font-size: $titulop-queries;
+            }
+        
+            &__texto{
+                width: 100%;
+                font-size: $textos_cel;  
+            }
         }
     
         .footer__center p{
@@ -51,29 +54,30 @@
     
     
     /* CURSOS */
-        .cursos__main{
-            flex-direction: column;
-            align-items: center;
-        }
+    .cursos{
+        width: 100%;
+        &__boxdos{
+            h1{
+                font-size: $titulop-queries;
+            }
     
-        .cursos__main h1{
-            font-size: $titulop-queries;
-            margin-top: 2%;
+            p{
+               font-size: $textos_cel; 
+            }
         }
-    
-        .cursos__main p{
-            
-            font-size: $textos_cel;
+
+        &__boxtres{
+            @include flex(column,center,normal);
+            p{
+                font-size: $textos_cel; 
+             }
+
         }
-    
-        .form label{
-            font-size: $textos_cel;
+
+        &__boxcuatro{
+            @include flex(column,normal,normal);
         }
-    
-        .form input{
-            width: 90%;
-            font-size: 0.6rem;
-        }
+    }
     
     /* TUTORIALES */
         .tutoriales h1{

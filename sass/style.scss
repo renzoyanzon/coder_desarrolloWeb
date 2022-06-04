@@ -105,25 +105,45 @@
     }
 
     &__boxtres{
+        @include flex(row,center,normal);
         margin: 2%;
-        width: 100%;
+        width: 100%; 
 
         p{
             text-align: justify;
         }
+        
+        img{
+            width: 100%;
+        }
+
+    }
+
+    &__boxcuatro{
+        @include flex(row,center,normal);
+        margin: 1%;
+        width: 100%; 
     }
 
     &__form{
-        margin: 2%;
+        @include flex(column,center,normal);
 
+        label{
+            font-size: 0.8rem;
+        }
+        select{
+            font-size: 0.8rem;
+        }
 
+        input{
+            font-size: 0.8rem;
+        }
     }
 
     &__prices{
-        @include flex(column,center,flex-start );
-    
+        @include flex(column,center,center );
         p{
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
     }
 
