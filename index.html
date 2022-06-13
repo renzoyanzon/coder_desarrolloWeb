@@ -23,6 +23,7 @@
 </head>
 <body>
     <header>
+<!-- Navegador -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
@@ -59,58 +60,23 @@
                             <a class="nav-link" href="paginas/contacto.html">Contacto</a>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-sm-2" type="text" placeholder="Search">
-                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                    </form>
+
                 </div>
             </div>
         </nav>
     </header>
    
-    <main>
+    <main >
+<!-- Sección uno: definimos un titulo principal, dentro un background img -->
 
         <section class="titulo">        
             <h1 class="titulo__transicion"> Hijos del viento</h1>
             <h2> Aprende con nosotros</h2>
         </section>
 
-        <section class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="recursos/wind_carrousel3.avif" class="d-block w-100" alt="windsurf">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="recursos/kite_carrousel3.avif" class="d-block w-100" alt="kitesurf">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="recursos/stand_carrousel3.avif" class="d-block w-100" alt="standup">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
 
-                <div class="col-12 col-md-6 sobre__nosotros">
-                    <h2> SOBRE NOSOTROS</h2>
-                    <h3> Somos los hijos del viento</h3>
-                    <p> Un equipo de instructores que ofrecemos lecciones para principianes y avanzados. Estamos en potrerillos -Mendoza, en este lugar corren vientos para todos los estilos con un amplio dique. Tenemos los equipos disponibles cerca para ayudarte a vos a que te olvides del traslado.</p>
-                    <p> Tenemos variedades de equipos para todas las especialidades. Te invitamos a ver los tutoriales para tener el concepto teorico de Windsurf. Además te ofrecemos los equipos disponibles.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="deportes"> <!-- En la siguiente sección colocamos los cursos ofrecidos -->
+<!-- Sección dos: detallamos los cursos ofrecidos --> 
+        <section class="deportes"> 
             <div class="deportes__box">
                 <div class="deportes__contenido"> 
                     <p class="deportes__titulo"> WINDSURF </p>
@@ -145,10 +111,48 @@
                 </div>
             </div>
         </section>
+
+<!-- Sección tres: descripción sobre nuestro proyecto -->
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-6 sobre__nosotros">
+                    <h2> SOBRE NOSOTROS</h2>
+                    <h3> Somos los hijos del viento</h3>
+                    <p> Un equipo de instructores que ofrecemos lecciones para principianes y avanzados. Estamos en potrerillos -Mendoza, en este lugar corren vientos para todos los estilos con un amplio dique. Tenemos los equipos disponibles cerca para ayudarte a vos a que te olvides del traslado.</p>
+                    <p> Tenemos variedades de equipos para todas las especialidades. Te invitamos a ver los tutoriales para tener el concepto teorico de Windsurf. Además te ofrecemos los equipos disponibles.</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="recursos/wind_carrousel3.avif" class="d-block w-100" alt="windsurf">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="recursos/kite_carrousel3.avif" class="d-block w-100" alt="kitesurf">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="recursos/stand_carrousel3.avif" class="d-block w-100" alt="standup">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
     </main>
 
+<!-- Definimos el footer para todas las paginas -->  
     <footer>
-        <div class="container-fluid">
+        <div class="container-fluid bg-dark">
             <div class="row">
                 <div class="col footer__center">
                     <p> Hijos del viento, Watersport</p> 
