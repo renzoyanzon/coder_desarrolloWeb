@@ -47,11 +47,35 @@
             }
         }
     
-        .footer__center p{
-            font-size: 0.6rem;
     
-        }
-    
+        /* FOOTER */
+
+        footer{
+            flex-direction: column;
+            justify-content: center;
+            .footerBlock{
+                justify-content: center;
+                .footerTexto{
+                    font-size: $textos_cel
+                    }   
+                }
+
+            .footerIcon{
+                justify-content: center;
+                height: 40px;
+                }
+
+            .footerContacto{
+                justify-content: center;
+                margin-right: 2%;
+                margin: 0%;
+                padding: 0%;
+                    a{
+                        font-size: $textos_cel;
+                    }
+                       
+                }
+            }
     
         /* CURSOS */
         .cursos{

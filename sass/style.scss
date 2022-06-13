@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'scripts';
 @import 'cursosindex';
+@import 'footer';
 
 
 *{
@@ -57,28 +58,18 @@
         font-family: 'Water Brush', cursive;
         margin-bottom: 3%;
         margin-top: 5%;
-        font-size: $titulo-principal*2;
-       
+        font-size: $titulo-principal*2;  
     }
 
     h3{
         font-size: $titulo-secundario*1.5;
         text-decoration: underline;
-
     }
 
     p{
         font-size: $textos;
         text-align: justify;
     }
-}
-
-/* FOOTER */
-
-.footer__center{
-    text-align: center;
-    margin-top: 2%;
-    color: white
 }
 
 /* PAGE CURSOS*/

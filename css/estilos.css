@@ -75,6 +75,65 @@
     padding: 1%;
     width: 70%; }
 
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to right, rgba(93, 93, 94, 0.6), rgba(57, 57, 58, 0.9));
+  position: all;
+  width: 100%;
+  margin-top: 0.5%; }
+  footer .footerBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem; }
+    footer .footerBlock .footerTexto {
+      color: black;
+      font-size: 1rem; }
+  footer .footerIcon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px; }
+    footer .footerIcon .fa {
+      padding: 0.3rem;
+      margin: 0 0.2rem;
+      font-size: 1.5rem;
+      width: 40px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 10px; }
+    footer .footerIcon .fa-facebook {
+      background: #3B5998;
+      color: white; }
+    footer .footerIcon .fa-instagram {
+      background: #3B5998;
+      color: white; }
+    footer .footerIcon .fa-twitter {
+      background: #3B5998;
+      color: white; }
+  footer .footerContacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5%;
+    padding: 0.5%;
+    margin-right: 2%; }
+    footer .footerContacto a {
+      color: white;
+      font-size: 1.5rem;
+      transition: transform 0.5s;
+      text-decoration: none;
+      margin: 12%; }
+      footer .footerContacto a:hover {
+        transform: scale(1.2); }
+
 * {
   margin: 0;
   padding: 0;
@@ -129,12 +188,6 @@
   .sobre__nosotros p {
     font-size: 0.9rem;
     text-align: justify; }
-
-/* FOOTER */
-.footer__center {
-  text-align: center;
-  margin-top: 2%;
-  color: white; }
 
 /* PAGE CURSOS*/
 .cursos {
@@ -247,8 +300,23 @@
       width: 100%;
       font-size: 1rem; }
   /* FOOTER */
-  .footer__center p {
-    font-size: 0.8rem; }
+  footer {
+    flex-direction: column;
+    justify-content: center; }
+    footer .footerBlock {
+      justify-content: center; }
+      footer .footerBlock .footerTexto {
+        font-size: 1rem; }
+    footer .footerIcon {
+      justify-content: center;
+      height: 40px; }
+    footer .footerContacto {
+      justify-content: center;
+      margin-right: 2%;
+      margin: 0%;
+      padding: 0%; }
+      footer .footerContacto a {
+        font-size: 1rem; }
   /* CURSOS */
   .cursos {
     width: 100%; }
@@ -306,8 +374,24 @@
     .deportes__texto {
       width: 100%;
       font-size: 0.8rem; }
-  .footer__center p {
-    font-size: 0.6rem; }
+  /* FOOTER */
+  footer {
+    flex-direction: column;
+    justify-content: center; }
+    footer .footerBlock {
+      justify-content: center; }
+      footer .footerBlock .footerTexto {
+        font-size: 0.8rem; }
+    footer .footerIcon {
+      justify-content: center;
+      height: 40px; }
+    footer .footerContacto {
+      justify-content: center;
+      margin-right: 2%;
+      margin: 0%;
+      padding: 0%; }
+      footer .footerContacto a {
+        font-size: 0.8rem; }
   /* CURSOS */
   .cursos {
     width: 100%; }
