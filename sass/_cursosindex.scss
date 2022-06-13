@@ -3,6 +3,7 @@
     background-color: $cursos-index;
     width: 100%;
     margin-top: 0.5%;
+    margin-bottom: 0.5%;
     
     &__contenido{
         @include flex(column,normal,center);
