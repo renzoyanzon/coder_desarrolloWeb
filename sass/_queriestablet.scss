@@ -1,7 +1,7 @@
 
 @media (min-width: 541px) and (max-width: 720px) {
 
-    /* INDEX */
+/* INDEX */
                 .titulo{
                     height:60vh;
                     margin-bottom: 2%;
@@ -120,4 +120,29 @@
                     margin: 2%;
                 }
         
+  /* 404ERROR */
+
+                .error{
+                    height: 600px;
+
+                    &__img{
+                        h1{
+                            font-size: $titulo-tablet;
+                        }
+
+                        img{
+                            height: 400px;
+                        }
+                    }
+
+                    &__text{
+                        p{
+                            font-size: $textos_tablet;
+                        }
+                    }
+                }
+
             }
+
+      
+

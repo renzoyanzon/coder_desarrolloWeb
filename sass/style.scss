@@ -183,6 +183,49 @@
     }   
 }
 
+
+/* 404 ERROR */
+
+.error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+
+    &__img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1{
+            text-align: center;
+            font-size: $titulo-principal*1.5;
+        }
+
+        img{
+            width: 100%;
+            height: 500px;
+        }
+    }
+
+    &__text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p{
+            font-size: $textos*1.5;
+        }
+    }
+
+}
+
+
+
+
+/* IMPORT DE MEDIAS QUERIES */
+
 @import 'queriestablet';
 @import 'queriescel';
              

@@ -138,6 +138,33 @@
             height: 90%;
             margin: 2%;
         }
+
+
+ /* 404ERROR */
+
+        .error{
+            height: 530px;
+
+            &__img{
+                h1{
+                    font-size: $titulop-queries;
+                }
+
+                img{
+                    height: 300px;
+                }
+            }
+
+            &__text{
+                p{
+                    font-size: $textos_cel;
+                }
+            }
+        }
     
     
     }
+
+
+
+
