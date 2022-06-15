@@ -1,16 +1,17 @@
+/* IMPORTACION DE SCSS */
 @import 'variables';
 @import 'scripts';
 @import 'cursosindex';
 @import 'footer';
 
-
+/* FORMATO ESTANDAR */
 *{
     margin:0;
     padding:0;
     font-size: 16px;    
 }
 
-/* PAGE INDEX*/
+/* INDEX*/
 
 .titulo{
     @include flex(column,space-between,center);
@@ -43,10 +44,50 @@
         font-family: 'Water Brush', cursive;
         text-align: center;
         color: black;
-        margin: 3%;
+        margin: 1%;
     }
-}  
+}
 
+.deportes{
+    @include flex (row,normal,normal);
+    background-color: $cursos-index;
+    width: 100%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    
+    &__contenido{
+        @include flex(column,normal,center);
+        padding: 2%;  
+    }
+
+    &__box{
+        @include flex(column,space-between,center);
+        width: 100%;
+        padding: 2%;
+    }
+
+    &__img{
+        border-radius: 20px;
+        margin: 2%;
+        width: 80%;
+    }
+
+    &__titulo{
+        color: rgba(255, 255, 255, 0.777);
+        font-size: $titulo-principal;
+        margin: 2%;
+        text-align: center;
+    }
+
+    &__texto{
+        color: rgba(245, 245, 245, 0.519);
+        font-size: $textos;
+        text-align: justify;
+        margin: 2%;
+        padding: 1%;
+        width: 90%;
+    }
+}
 
 .sobre__nosotros{
     @include flex(column,flex-start,flex-start);
@@ -56,98 +97,54 @@
     h2{
         align-self: center;
         font-family: 'Water Brush', cursive;
-        margin-bottom: 3%;
-        margin-top: 5%;
+        margin-bottom: 4%;
+        margin-top: 4%;
         font-size: $titulo-principal*2;  
     }
 
     h3{
         font-size: $titulo-secundario*1.5;
         text-decoration: underline;
+        margin: 2%;
     }
 
     p{
+        margin: 2%;
         font-size: $textos;
         text-align: justify;
     }
 }
 
-/* PAGE CURSOS*/
-
-.cursos{
-    @include flex(column,center,normal);
-    background-color: whitesmoke;
-    
-
-    &__boxuno{
-        @include flex(row,center,normal);
-        margin: 1%;
-       
-        h1{
-            font-size: $titulo-principal;
-            text-align: center;
-            text-decoration: underline;
-        }
-
-        p{
-            text-align: justify; 
-         }
-
-    }
-
-    &__boxdos{
-        margin: 1%;
-    
-        p{
-           text-align: justify; 
-        }
-    }
-
-    &__boxtres{
-        @include flex(row,center,normal);
-        margin: 1%;
-    }
-
-    &__img{
-        @include flex(row,center,center);
-        img{
-            width: 100%;
-        }
-        
-    }
-
-    &__form{
-        @include flex(column,center,normal);
-
-        label{
-            font-size: 1rem;
-        }
-        select{
-            font-size: 1rem;
-        }
-
-        input{
-            font-size: 1rem;
-        }
-    }
-
-
-    &__prices{
-        @include flex(column,center,center );
-        p{
-            font-size: 1rem;
-        }
-    }
-
-}
 
 
 /* PAGE TUTORIALES */
 
 .tutoriales{
-    text-align: center;
-    p{
-        text-align: justify;
+    
+    h1{
+        text-align: center;
+        font-size: $titulo-principal*1.5;
+        margin-top: 1%;
+     }
+
+    &__videos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.429);
+        background-color: $bgcolor-fondo;
+        background-image: $bg-estilo;
+        
+        iframe{
+            width: 90%;
+            margin-top: 2%;
+        }
+
+        p{
+            width: 90%;
+            margin: 2%;
+            text-align: justify;
+        }
     }
 }
 

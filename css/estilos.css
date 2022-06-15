@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* IMPORTACION DE SCSS */
 /* Tamaño de titulos */
 /* Colores */
 /* LISTA DE IMAGES */
@@ -39,41 +40,60 @@
   height: 300px; }
 
 /* MIXIN */
-.deportes {
+/* Aplica a los tres cursos ofrecidos */
+.cursos {
   display: flex;
-  flex-direction: row;
-  justify-content: normal;
+  flex-direction: column;
+  justify-content: center;
   align-items: normal;
-  background-color: black;
-  width: 100%;
-  margin-top: 0.5%;
-  margin-bottom: 0.5%; }
-  .deportes__contenido {
+  background-color: whitesmoke; }
+  .cursos__boxuno {
     display: flex;
-    flex-direction: column;
-    justify-content: normal;
+    flex-direction: row;
+    justify-content: center;
+    align-items: normal;
+    margin: 1%; }
+    .cursos__boxuno h1 {
+      font-size: 1.5rem;
+      text-align: start; }
+    .cursos__boxuno p {
+      text-align: justify; }
+  .cursos__boxdos {
+    margin: 1%; }
+    .cursos__boxdos p {
+      text-align: justify; }
+  .cursos__boxtres {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: normal;
+    margin: 1%; }
+  .cursos__img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center; }
-  .deportes__box {
+    .cursos__img img {
+      width: 100%; }
+  .cursos__form {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: normal; }
+    .cursos__form label {
+      font-size: 1rem; }
+    .cursos__form select {
+      font-size: 1rem; }
+    .cursos__form input {
+      font-size: 1rem; }
+  .cursos__prices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 90%;
-    padding: 1%; }
-  .deportes__img {
-    border-radius: 20px;
-    width: 70%; }
-  .deportes__titulo {
-    color: grey;
-    font-size: 1.5rem;
-    margin-bottom: 3%;
-    text-align: center; }
-  .deportes__texto {
-    color: grey;
-    font-size: 0.9rem;
-    text-align: justify;
-    padding: 1%;
-    width: 70%; }
+    margin: 2%; }
+    .cursos__prices p {
+      font-size: 1rem; }
 
 /* FOOTER */
 footer {
@@ -134,12 +154,13 @@ footer {
       footer .footerContacto a:hover {
         transform: scale(1.2); }
 
+/* FORMATO ESTANDAR */
 * {
   margin: 0;
   padding: 0;
   font-size: 16px; }
 
-/* PAGE INDEX*/
+/* INDEX*/
 .titulo {
   display: flex;
   flex-direction: column;
@@ -167,7 +188,46 @@ footer {
     font-family: 'Water Brush', cursive;
     text-align: center;
     color: black;
-    margin: 3%; }
+    margin: 1%; }
+
+.deportes {
+  display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  align-items: normal;
+  background-color: black;
+  width: 100%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%; }
+  .deportes__contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+    padding: 2%; }
+  .deportes__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2%; }
+  .deportes__img {
+    border-radius: 20px;
+    margin: 2%;
+    width: 80%; }
+  .deportes__titulo {
+    color: rgba(255, 255, 255, 0.777);
+    font-size: 1.5rem;
+    margin: 2%;
+    text-align: center; }
+  .deportes__texto {
+    color: rgba(245, 245, 245, 0.519);
+    font-size: 0.9rem;
+    text-align: justify;
+    margin: 2%;
+    padding: 1%;
+    width: 90%; }
 
 .sobre__nosotros {
   display: flex;
@@ -179,75 +239,37 @@ footer {
   .sobre__nosotros h2 {
     align-self: center;
     font-family: 'Water Brush', cursive;
-    margin-bottom: 3%;
-    margin-top: 5%;
+    margin-bottom: 4%;
+    margin-top: 4%;
     font-size: 3rem; }
   .sobre__nosotros h3 {
     font-size: 1.8rem;
-    text-decoration: underline; }
+    text-decoration: underline;
+    margin: 2%; }
   .sobre__nosotros p {
+    margin: 2%;
     font-size: 0.9rem;
     text-align: justify; }
 
-/* PAGE CURSOS*/
-.cursos {
+/* PAGE TUTORIALES */
+.tutoriales h1 {
+  text-align: center;
+  font-size: 2.25rem;
+  margin-top: 1%; }
+
+.tutoriales__videos {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: normal;
-  background-color: whitesmoke; }
-  .cursos__boxuno {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: normal;
-    margin: 1%; }
-    .cursos__boxuno h1 {
-      font-size: 1.5rem;
-      text-align: center;
-      text-decoration: underline; }
-    .cursos__boxuno p {
-      text-align: justify; }
-  .cursos__boxdos {
-    margin: 1%; }
-    .cursos__boxdos p {
-      text-align: justify; }
-  .cursos__boxtres {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: normal;
-    margin: 1%; }
-  .cursos__img {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
-    .cursos__img img {
-      width: 100%; }
-  .cursos__form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: normal; }
-    .cursos__form label {
-      font-size: 1rem; }
-    .cursos__form select {
-      font-size: 1rem; }
-    .cursos__form input {
-      font-size: 1rem; }
-  .cursos__prices {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .cursos__prices p {
-      font-size: 1rem; }
-
-/* PAGE TUTORIALES */
-.tutoriales {
-  text-align: center; }
-  .tutoriales p {
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.429);
+  background-color: #7a7a7a94;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E"); }
+  .tutoriales__videos iframe {
+    width: 90%;
+    margin-top: 2%; }
+  .tutoriales__videos p {
+    width: 90%;
+    margin: 2%;
     text-align: justify; }
 
 /* PAGE EQUIPOS */
