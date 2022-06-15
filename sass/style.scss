@@ -151,14 +151,27 @@
 
 /* PAGE EQUIPOS */
 
-.grid__equipos{
-
+.equipos{
     display: flex;
     justify-content: center;
-    margin-bottom: 2%;
-    margin-top: 2%;
-}
+    margin-top: 1%;
 
+    &__color{
+        background-color: $bgcolor-fondo;
+        background-image: $bg-estilo;
+    }
+    
+    h5{
+        font-size: $titulo-secundario;
+        text-align: center;
+    }
+
+    p{
+        font-size: $textos;
+        text-align: justify;
+        margin: 1%;
+    }
+}
 
 /* PAGE CONTACTO */
 

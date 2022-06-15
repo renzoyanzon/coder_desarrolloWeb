@@ -6,37 +6,37 @@
 /* EACH */
 .img1 {
   background-image: url("../recursos/equipos/equipo_tabla.jpg");
-  width: 300px;
+  width: 100%;
   height: 300px; }
 
 .img2 {
   background-image: url("../recursos/equipos/equipo_vela.jpg");
-  width: 300px;
+  width: 100%;
   height: 300px; }
 
 .img3 {
   background-image: url("../recursos/equipos/equipo_botabara.jpg");
-  width: 300px;
+  width: 100%;
   height: 300px; }
 
 .img4 {
   background-image: url("../recursos/equipos/equipo_mastil.jpg");
-  width: 300px;
+  width: 100%;
   height: 300px; }
 
 .img5 {
   background-image: url("../recursos/equipos/equipo_quilla.jpg");
-  width: 300px;
+  width: 100%;
   height: 300px; }
 
 .img6 {
   background-image: url("../recursos/equipos/equipo_extensor.jpg");
-  width: 300px;
+  width: 100%;
   height: 300px; }
 
 .img7 {
   background-image: url("../recursos/equipos/equipo_accesorios.jpg");
-  width: 300px;
+  width: 100%;
   height: 300px; }
 
 /* MIXIN */
@@ -273,11 +273,20 @@ footer {
     text-align: justify; }
 
 /* PAGE EQUIPOS */
-.grid__equipos {
+.equipos {
   display: flex;
   justify-content: center;
-  margin-bottom: 2%;
-  margin-top: 2%; }
+  margin-top: 1%; }
+  .equipos__color {
+    background-color: #7a7a7a94;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E"); }
+  .equipos h5 {
+    font-size: 1.2rem;
+    text-align: center; }
+  .equipos p {
+    font-size: 0.9rem;
+    text-align: justify;
+    margin: 1%; }
 
 /* PAGE CONTACTO */
 .contactos {
