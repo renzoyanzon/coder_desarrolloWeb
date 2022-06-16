@@ -20,11 +20,11 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size:  cover;
-	height:70vh;
+	height:80vh;
 	position: relative;
 
     &__transicion{
-        transition: all 2s
+        transition: all 2s;
     }
 
     h1{
@@ -40,7 +40,7 @@
     }
 
     h2{
-        font-size: $titulo-principal*3;
+        font-size: $titulo-principal*2;
         font-family: 'Water Brush', cursive;
         text-align: center;
         color: black;
