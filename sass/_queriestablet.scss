@@ -7,32 +7,37 @@
                     margin-bottom: 2%;
     
                     h1{
-                        font-size: 2rem;
+                        font-size: $titulo-tablet*2;
                     }
     
                     h2{
-                        font-size: 2rem;
+                        font-size: $titulo-tablet*2;
                     }
                 }
         
-                .sobre__nosotros h2{
-                    font-size: $titulo-tablet;
-                }
-        
-                .sobre__nosotros h3{
-                    font-size: $textos_tablet;
-                }
-        
-                .sobre__nosotros p{
-                    font-size: $textos_tablet;
+                .sobre__nosotros {
+
+                    h2{
+                        font-size: $titulo-tablet*1.5;
+                    }
+                    h3{
+                        font-size: $textos_tablet;
+                    }
+                    p{
+                        font-size: $textos_tablet;
+                    }
                 }
             
-
                 .deportes{
                     @include flex(column,center,center);
-        
-                    &__img{
-                        width: 100%;
+
+                    &__contenido{
+                        border: 1px solid grey;
+                        margin: 2%;
+                    }
+
+                    &__box{
+                        width: 80%;
                     }
         
                     &__titulo{
@@ -40,7 +45,6 @@
                     }
                 
                     &__texto{
-                        width: 100%;
                         font-size: $textos_tablet;  
                     }
                 }
@@ -74,8 +78,6 @@
                        
                     }
                 }
-        
-              
             
         /* CURSOS */
                 .cursos{
@@ -98,21 +100,42 @@
                     }
 
                     &__img{
+                        width: 100%;
                         margin-top: 3%;
                         margin-bottom: 3%;
                     }
-
                 }
 
-        
         /* TUTORIALES */
         
-                .tutoriales h1{
-                    font-size: $titulop-queries;
+                .tutoriales{
+                    h1{
+                        font-size: $titulo-tablet;
                 }
-        
-        
-        /* CONTACTOS */
+
+                    &__videos{
+                        p{
+                            font-size: $textos_tablet;
+                        }
+                    }
+                }
+
+/* PAGE EQUIPOS */
+
+                .equipos{
+                            
+                    h5{
+                        font-size: $titulo-tablet;
+                    }
+
+                    p{
+                        font-size: $textos_tablet;
+
+                    }
+                }
+
+
+/* CONTACTOS */
         
                 .contactos iframe{
                     width: 95%;
@@ -120,7 +143,7 @@
                     margin: 2%;
                 }
         
-  /* 404ERROR */
+         /* 404ERROR */
 
                 .error{
                     height: 600px;
